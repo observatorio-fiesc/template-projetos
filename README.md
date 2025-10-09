@@ -11,9 +11,9 @@ A estrutura de pastas foi pensada para separar de forma lógica os diferentes co
 ├── Dados/
 │   └── README.md  -> Armazene aqui os dados brutos e processados.
 ├── Imagens/
-│   └── README.md  -> Guarde imagens e gráficos gerados pelo projeto.
+│   └── README.md  -> Guarde imagens e gráficos gerados/utilizados pelo projeto.
 ├── Modelos/
-│   └── README.md  -> Salve os modelos treinados e serializados.
+│   └── README.md  -> Salve os modelos treinados.
 ├── Notebooks/
 │   └── README.md  -> Para prototipação e análises exploratórias.
 ├── Scripts/
