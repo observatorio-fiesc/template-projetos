@@ -1,1 +1,1 @@
-"Armazene aqui os scripts e notebooks criados" 
+"Armazene aqui os scripts (.py) criados" 
