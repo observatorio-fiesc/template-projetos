@@ -80,11 +80,15 @@ Após a ativação, o nome do ambiente (`.venv`) aparecerá no início da linha 
 
 ### 3. Instale as Dependências
 
-Com o ambiente ativado, instale as bibliotecas necessárias para o projeto, que devem estar listadas no arquivo `requirements.txt`.
+Com o ambiente ativado, instale as bibliotecas necessárias para o projeto:
 
 ```bash
 # Exemplo de instalação
-pip install -r requirements.txt
+py -m pip install pandas
+```
+Opcionalmente, pode-se criar um arquivo .txt (bloco de notas) com as bibliotecas de interesse e instalá-las assim: 
+```bash
+py -m pip install -r requirements.txt
 ```
 
 ### Pré-requisitos
