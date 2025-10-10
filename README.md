@@ -93,17 +93,9 @@ Exemplo:
 ### 6. Instale as Dependências
 
 Com o ambiente ativado, instale as bibliotecas necessárias para o projeto:
-### 3. Instale as Dependências
-
-Com o ambiente ativado, instale as bibliotecas necessárias para o projeto:
 
 ```bash
 # Exemplo de instalação
-py -m pip install pandas
-```
-Opcionalmente, pode-se criar um arquivo .txt (bloco de notas) com as bibliotecas de interesse e instalá-las assim: 
-```bash
-py -m pip install -r requirements.txt
 py -m pip install pandas
 ```
 Opcionalmente, pode-se criar um arquivo .txt (bloco de notas) com as bibliotecas de interesse e instalá-las assim: 
