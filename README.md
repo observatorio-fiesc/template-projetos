@@ -7,19 +7,24 @@ Este repositório serve como um template padrão para iniciar novos projetos de 
 A estrutura de pastas foi pensada para separar de forma lógica os diferentes componentes de um projeto de dados:
 
 ```
-.
+Título do Projeto
 ├── Dados/
-│   └── README.md  -> Armazene aqui os dados brutos e processados.
+│   ├──              -> Armazene aqui os dados brutos e processados
+│   └──
 ├── Imagens/
-│   └── README.md  -> Guarde imagens e gráficos gerados/utilizados pelo projeto.
+│   ├──              -> Guarde imagens e gráficos gerados/utilizados pelo projeto
+│   └──  
 ├── Modelos/
-│   └── README.md  -> Salve os modelos treinados.
+│   ├──              -> Salve os modelos treinados
+│   └──  
 ├── Notebooks/
-│   └── README.md  -> Para prototipação e análises exploratórias.
+│   ├──              -> Para prototipação e análises exploratórias
+│   └── 
 ├── Scripts/
-│   └── README.md  -> Scripts para ETL, treinamento, inferência, etc.
-├── requirements.txt -> Lista de dependências do projeto.
-└── README.md        -> Este arquivo.
+│   ├──              -> Scripts para ETL, treinamento, inferência, etc
+│   └──  
+├── requirements.txt -> Lista de dependências do projeto
+└── README.md        -> Este arquivo
 ```
 
 *   **`Dados/`**: Contém os datasets. É uma boa prática ter subpastas como `raw/` para dados brutos e `processed/` para dados limpos e transformados.
@@ -55,7 +60,15 @@ Depois, entre na pasta do projeto:
 cd NOME_DO_SEU_NOVO_REPOSITORIO
 ```
 
-### 1. Crie o Ambiente Virtual
+### 3. Crie e Configure o Arquivo .gitignore
+Antes de criar qualquer outro arquivo ou ambiente, é fundamental instruir o Git sobre o que ele não deve rastrear. Isso evita que arquivos desnecessários, como o ambiente virtual, chaves de api ou dados brutos pesados, sejam enviados para o GitHub.
+
+**No Windows (PowerShell/CMD):**
+```bash
+echo venv/ > .gitignore
+```
+
+### 4. Crie o Ambiente Virtual
 
 É uma prática essencial criar um ambiente virtual para isolar as dependências do seu projeto. Abra o terminal na raiz do projeto e execute:
 
@@ -64,27 +77,30 @@ cd NOME_DO_SEU_NOVO_REPOSITORIO
 py -m venv venv
 ```
 
-### 2. Ative o Ambiente Virtual
+### 5. Ative o Ambiente Virtual
 
 **No Windows (PowerShell/CMD):**
-```powershell
+```bash
 .\venv\Scripts\activate
 ```
 
-**No macOS/Linux:**
+Após a ativação, o nome do ambiente (`.venv`) aparecerá no início da linha do seu terminal.
+Exemplo:
 ```bash
-source ./venv/bin/activate
+(venv) PS C:\Users\gustavo.migliorini\Documents\data_science\dlab-SC>
 ```
 
-Após a ativação, o nome do ambiente (`.venv`) aparecerá no início da linha do seu terminal.
+### 6. Instale as Dependências
 
-### 3. Instale as Dependências
-
-Com o ambiente ativado, instale as bibliotecas necessárias para o projeto, que devem estar listadas no arquivo `requirements.txt`.
+Com o ambiente ativado, instale as bibliotecas necessárias para o projeto:
 
 ```bash
 # Exemplo de instalação
-pip install -r requirements.txt
+py -m pip install pandas
+```
+Opcionalmente, pode-se criar um arquivo .txt (bloco de notas) com as bibliotecas de interesse e instalá-las assim: 
+```bash
+py -m pip install -r requirements.txt
 ```
 
 ### Pré-requisitos
