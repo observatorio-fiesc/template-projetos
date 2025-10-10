@@ -37,12 +37,12 @@ Título do Projeto
 
 Siga os passos abaixo para configurar o ambiente de desenvolvimento para um novo projeto usando este template.
 
-Para iniciar um novo projeto utilizando este template, siga os passos abaixo. O processo consiste em primeiro criar um novo repositório a partir deste template e depois configurar seu ambiente de desenvolvimento local.
+O processo consiste em primeiro criar um novo repositório a partir deste template e depois configurar seu ambiente de desenvolvimento local.
 
 ### 1. Crie um Novo Repositório a Partir Deste Template
 Navegue até a página principal deste repositório no GitHub.
 
-Clique no botão verde "Use this template" (Usar este modelo) e selecione "Create a new repository" (Criar um novo repositório).
+Clique no botão verde "Use this template" e selecione "Create a new repository".
 
 Na página seguinte, escolha um nome para o seu novo repositório (ex: analise-de-mercado-2025), adicione uma descrição e decida se ele será público ou privado.
 
@@ -93,9 +93,17 @@ Exemplo:
 ### 6. Instale as Dependências
 
 Com o ambiente ativado, instale as bibliotecas necessárias para o projeto:
+### 3. Instale as Dependências
+
+Com o ambiente ativado, instale as bibliotecas necessárias para o projeto:
 
 ```bash
 # Exemplo de instalação
+py -m pip install pandas
+```
+Opcionalmente, pode-se criar um arquivo .txt (bloco de notas) com as bibliotecas de interesse e instalá-las assim: 
+```bash
+py -m pip install -r requirements.txt
 py -m pip install pandas
 ```
 Opcionalmente, pode-se criar um arquivo .txt (bloco de notas) com as bibliotecas de interesse e instalá-las assim: 
