@@ -1,1 +1,1 @@
-"Armazene aqui imagens utilizados no projeto" 
+Armazene aqui imagens utilizados no projeto

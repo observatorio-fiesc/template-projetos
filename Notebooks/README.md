@@ -1,1 +1,1 @@
-"Armazene aqui os notebooks (.ipynb) criados" 
+Armazene aqui os notebooks (.ipynb) de testes e análises exploratórias de dados
