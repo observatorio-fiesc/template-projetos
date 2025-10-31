@@ -8,30 +8,34 @@ A estrutura de pastas foi pensada para separar de forma lógica os diferentes co
 
 ```
 Título do Projeto
-├── Dados/
-│   ├──              -> Armazene aqui os dados brutos e processados
-│   └──
-├── Imagens/
+├── data/
+│   ├── processed   -> Armazene aqui os dados brutos e processados
+│   └── raw
+├── reports/
 │   ├──              -> Guarde imagens e gráficos gerados/utilizados pelo projeto
 │   └──  
-├── Modelos/
+├── models/
 │   ├──              -> Salve os modelos treinados
 │   └──  
-├── Notebooks/
+├── notebooks/
 │   ├──              -> Para prototipação e análises exploratórias
 │   └── 
-├── Scripts/
+├── scripts/
 │   ├──              -> Scripts para ETL, treinamento, inferência, etc
-│   └──  
+│   └──
+├── references/
+│   ├──              -> Salve referências e documentações utilizadas no projeto
+│   └──   
 ├── requirements.txt -> Lista de dependências do projeto
 └── README.md        -> Este arquivo
 ```
 
-*   **`Dados/`**: Contém os datasets. É uma boa prática ter subpastas como `raw/` para dados brutos e `processed/` para dados limpos e transformados.
-*   **`Imagens/`**: Ideal para salvar visualizações, como gráficos e plots, que podem ser usados em relatórios ou apresentações.
-*   **`Modelos/`**: Local para armazenar os artefatos de modelos treinados (ex: arquivos `.pkl`, `.h5`, `.joblib`).
-*   **`Notebooks/`**: Jupyter Notebooks para experimentação. Tente manter os notebooks focados em etapas específicas (ex: `01-exploracao-dados.ipynb`).
-*   **`Scripts/`**: Código Python modularizado. Funções de pré-processamento, classes de modelos e pipelines de execução devem ser colocados aqui para serem reutilizados.
+*   **`data/`**: Contém os datasets. É uma boa prática ter subpastas como `raw/` para dados brutos e `processed/` para dados limpos e transformados.
+*   **`reports/`**: Ideal para salvar visualizações, como gráficos e plots, que podem ser usados em relatórios ou apresentações.
+*   **`models/`**: Local para armazenar os artefatos de modelos treinados (ex: arquivos `.pkl`, `.h5`, `.joblib`).
+*   **`notebooks/`**: Jupyter Notebooks para experimentação. Tente manter os notebooks focados em etapas específicas (ex: `01-exploracao-dados.ipynb`).
+*   **`scripts/`**: Código Python modularizado. Funções de pré-processamento, classes de modelos e pipelines de execução devem ser colocados aqui para serem reutilizados.
+*   **`references/`**: Local para armazenar referências e documentações utilizadas na elaboração do projeot.
 
 ## Como começar
 
@@ -60,13 +64,9 @@ Depois, entre na pasta do projeto:
 cd NOME_DO_SEU_NOVO_REPOSITORIO
 ```
 
-### 3. Crie e configure o arquivo .gitignore
+### 3. Configure o arquivo .gitignore
 Antes de criar qualquer outro arquivo ou ambiente, é fundamental instruir o Git sobre o que ele não deve rastrear. Isso evita que arquivos desnecessários, como o ambiente virtual, chaves de api ou dados brutos pesados, sejam enviados para o GitHub.
 
-**No Windows (PowerShell/CMD):**
-```bash
-echo venv/ > .gitignore
-```
 
 ### 4. Crie o ambiente virtual
 
@@ -99,6 +99,9 @@ Com o ambiente ativado, instale as bibliotecas necessárias para o projeto:
 py -m pip install pandas
 ```
 Opcionalmente, pode-se criar um arquivo .txt (bloco de notas) com as bibliotecas de interesse e instalá-las assim: 
+
+Por padrão esse Template já contém algumas dependências básicas, como pandas, numpy, matplotlib, scikit-learn, etc.
+
 ```bash
 py -m pip install -r requirements.txt
 ```

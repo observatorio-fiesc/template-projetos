@@ -1,1 +1,13 @@
-ECHO est  ativado.
+ipython
+jupyterlab
+matplotlib
+mkdocs
+notebook
+numpy
+pandas
+pip
+pytest
+python-dotenv
+ruff
+scikit-learn
+-e .
