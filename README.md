@@ -8,34 +8,34 @@ A estrutura de pastas foi pensada para separar de forma lógica os diferentes co
 
 ```
 Título do Projeto
-├── data/
-│   ├── processed   -> Armazene aqui os dados brutos e processados
-│   └── raw
-├── reports/
+├── Dados/
+│   ├── Processados   -> Armazene aqui os dados brutos e processados
+│   └── brutos
+├── Relatórios/
 │   ├──              -> Guarde imagens e gráficos gerados/utilizados pelo projeto
 │   └──  
-├── models/
+├── Modelos/
 │   ├──              -> Salve os modelos treinados
 │   └──  
-├── notebooks/
+├── Notebooks/
 │   ├──              -> Para prototipação e análises exploratórias
 │   └── 
-├── scripts/
+├── Scripts/
 │   ├──              -> Scripts para ETL, treinamento, inferência, etc
 │   └──
-├── references/
+├── Referências/
 │   ├──              -> Salve referências e documentações utilizadas no projeto
 │   └──   
 ├── requirements.txt -> Lista de dependências do projeto
 └── README.md        -> Este arquivo
 ```
 
-*   **`data/`**: Contém os datasets. É uma boa prática ter subpastas como `raw/` para dados brutos e `processed/` para dados limpos e transformados.
-*   **`reports/`**: Ideal para salvar visualizações, como gráficos e plots, que podem ser usados em relatórios ou apresentações.
-*   **`models/`**: Local para armazenar os artefatos de modelos treinados (ex: arquivos `.pkl`, `.h5`, `.joblib`).
-*   **`notebooks/`**: Jupyter Notebooks para experimentação. Tente manter os notebooks focados em etapas específicas (ex: `01-exploracao-dados.ipynb`).
-*   **`scripts/`**: Código Python modularizado. Funções de pré-processamento, classes de modelos e pipelines de execução devem ser colocados aqui para serem reutilizados.
-*   **`references/`**: Local para armazenar referências e documentações utilizadas na elaboração do projeot.
+*   **`Dados/`**: Contém os datasets. É uma boa prática ter subpastas como `Brutos/` para dados brutos e `Processados/` para dados limpos e transformados.
+*   **`Relatórios/`**: Ideal para salvar visualizações, como gráficos e plots, que podem ser usados em relatórios ou apresentações.
+*   **`Modelos/`**: Local para armazenar os artefatos de modelos treinados (ex: arquivos `.pkl`, `.h5`, `.joblib`).
+*   **`Notebooks/`**: Jupyter Notebooks para experimentação. Tente manter os notebooks focados em etapas específicas (ex: `01-exploracao-dados.ipynb`).
+*   **`Scripts/`**: Código Python modularizado. Funções de pré-processamento, classes de modelos e pipelines de execução devem ser colocados aqui para serem reutilizados.
+*   **`Referências/`**: Local para armazenar referências e documentações utilizadas na elaboração do projeot.
 
 ## Como começar
 
